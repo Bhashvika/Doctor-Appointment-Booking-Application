@@ -1,0 +1,81 @@
+/* Container for the entire doctors list */
+.doctor-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Individual doctor card styling */
+.doctor-card {
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.doctor-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+.availability {
+    display: flex;
+    align-items: center;
+    font-weight: 300;
+    font-size: 15px;
+    margin: 5px 0;
+}
+.h2{
+    font-size: 25px;
+    font-weight: 500;
+    color: rgb(37, 18, 54);
+}
+/* Doctor image styling */
+.doctor-card img {
+    background-color: #6b8d93;
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+/* Doctor name */
+.doctor-card p {
+    font-size: 16px;
+    color: #292525;
+    margin: 5px 0;
+}
+
+/* Specialty description */
+.doctor-card p:nth-child(3) {
+    font-size: 14px;
+    color: #777;
+}
+
+/* Heading styling */
+h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #2b2525;
+    margin: 20px 0;
+}
+
+/* Add padding and center alignment for the container */
+.doctor-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .doctor-card {
+        width: 90%;
+        margin: 10px 0;
+    }
+}

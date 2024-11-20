@@ -1,0 +1,81 @@
+.footer {
+    color: rgb(43, 41, 41); /* White text */
+    padding: 20px 0; /* Top and bottom padding */
+    text-align: center; /* Center the text */
+    font-family: Arial, sans-serif; /* Font style */
+    margin-top: 40px;
+}
+
+.footer-container {
+    display: flex; /* Flex layout */
+    justify-content: space-around; /* Space out content */
+    align-items: flex-start; /* Align items at the top */
+    max-width: 1200px; /* Max width of footer */
+    margin: 0 auto; /* Center the container */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.maincontent {
+    flex: 1; /* Take up space proportionally */
+    text-align: left; /* Align content to the left */
+    padding: 0 20px; /* Side padding */
+}
+
+.maincontent img {
+    width: 150px; /* Adjust the logo width */
+    margin-bottom: 15px; /* Space below the logo */
+}
+
+.maincontent p {
+    font-size: 14px; /* Smaller font size for the description */
+    line-height: 1.6; /* Improve readability */
+    margin-top: 0; /* Remove top margin */
+}
+
+.footer-links, .footer-social {
+    flex: 1; /* Take up equal space */
+    margin: 0 20px; /* Side margins */
+}
+
+.footer-links h4, .footer-social h4 {
+    margin-bottom: 10px; /* Space below headings */
+}
+
+.footer-links ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+}
+
+.footer-links li {
+    margin: 5px 0; /* Space between list items */
+}
+
+.footer-links a {
+    color: rgb(46, 44, 44); /* Link color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Smooth transition on hover */
+}
+
+.footer-links a:hover {
+    color: #ddd; /* Change color on hover */
+}
+
+.social-icons {
+    display: flex; /* Align icons in a row */
+    gap: 10px; /* Space between icons */
+    font-size: 24px; /* Size of icons */
+    justify-content: center; /* Center the icons */
+}
+
+.hr {
+    border: 0;
+    border-top: 1px solid #403f3f; /* Light grey line */
+    margin: 20px 0; /* Space around the line */
+}
+
+.footer-bottom {
+    margin-top: 10px; /* Space above the copyright text */
+    font-size: 14px; /* Smaller font size */
+    color: #1c1b1b; 
+    text-align: center;/* Slightly lighter color */
+}

@@ -1,0 +1,129 @@
+/* General Form Styling */
+.add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+form {
+    background-color: white;
+    width: 80%;
+    max-width: 900px;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+/* Image Upload Styling */
+.add-image-upload {
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border: 2px dashed #ccc;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.add-image-upload img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.add-image-upload p {
+    font-size: 14px;
+    color: #555;
+    text-align: center;
+}
+
+/* Input Fields Styling */
+.add-product-name,
+.add-product-description,
+.add-category-price {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.add-product-name p,
+.add-product-description p,
+.add-category p {
+    font-weight: 600;
+    color: #333;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #007bff;
+}
+
+/* Two-Column Layout Adjustments */
+textarea {
+    grid-column: span 2;
+    resize: none;
+}
+
+.add-category-price {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.add-category,
+.add-price {
+    flex: 0.5;
+}
+
+/* Button Styling */
+.add-btn {
+    grid-column: span 2;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: center;
+    margin-top: 10px;
+}
+
+.add-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    form {
+        grid-template-columns: 1fr;
+    }
+
+    .add-category-price {
+        flex-direction: column;
+    }
+
+    .add-btn {
+        width: 100%;
+    }
+}

@@ -1,0 +1,99 @@
+/* General Layout */
+.list {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+}
+
+.list p {
+  font-size: 34px;
+  font-weight: bold;
+  color: #332965;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Table Container */
+.list-table {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.list-table-format {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr  1fr;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 14px;
+}
+
+/* Header Row Styling */
+.title {
+  background-color: #28a745;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.title b {
+  font-size: 16px;
+}
+
+/* Row Styling */
+.list-table-format img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.list-table-format p {
+  margin: 0;
+  padding: 5px;
+  color: #333;
+  word-break: break-word;
+  font-size: 18px;
+}
+
+.list-table-format:nth-child(odd):not(.title) {
+  background-color: #f9f9f9;
+}
+
+.list-table-format:nth-child(even):not(.title) {
+  background-color: white;
+}
+
+.list-table-format:hover {
+  background-color: #e6f7ff;
+}
+.cursor {
+  color: red;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.cursor:hover {
+  transform: scale(1.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .list-table-format {
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      font-size: 12px;
+  }
+
+  .title {
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  .list-table-format img {
+      width: 40px;
+      height: 40px;
+  }
+}

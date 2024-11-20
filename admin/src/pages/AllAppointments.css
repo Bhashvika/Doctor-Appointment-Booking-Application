@@ -1,0 +1,56 @@
+/* Container styling */
+.appointments-container {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 80%;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Title styling */
+h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Table styling */
+.appointments-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.appointments-table th, .appointments-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.appointments-table th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.appointments-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.appointments-table tr:hover {
+    background-color: #ddd;
+}
+
+.appointments-table td {
+    font-size: 14px;
+}
+
+/* Centered message for loading/error/no data */
+.message {
+    text-align: center;
+    font-size: 16px;
+    color: #555;
+    margin-top: 20px;
+}

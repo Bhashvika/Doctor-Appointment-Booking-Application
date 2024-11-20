@@ -1,0 +1,39 @@
+/* speciality.css */
+
+.speciality h2 {
+    padding-top: 15px;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.speciality p {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+.speciality-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.speciality-container p {
+    padding: 10px;
+    font-size: 1rem;
+    text-align: center;
+    background-color: #fff;
+    font-weight: 400;
+}
+.item-image {
+    transition: transform 0.5s ease; /* Smooth transition */
+  }
+  
+  .item-image:hover {
+    transform: translateY(-10px); /* Moves the image up by 5px on hover */
+  }

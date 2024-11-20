@@ -1,0 +1,135 @@
+.doctor-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f9f9f9; /* Light background for better contrast */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    margin: 20px auto;
+    max-width: 1300px; 
+    gap:60px;/* Center the content and limit its width */
+}
+.h2{
+    font-size: 30px;
+    font-weight: 500;
+    color:rgb(34, 4, 62)
+}
+.doctor-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; /* Make the image circular */
+    object-fit: cover; /* Ensure the image maintains aspect ratio */
+    border: 3px solid #a9c7dc; /* Optional border color */
+}
+
+.doctor {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    flex: 1; /* Allow the details to take up remaining space */
+}
+
+.doctor h2 {
+    font-size: 26px;
+    color: #09064e; /* Dark color for better readability */
+    margin-bottom: 8px;
+}
+
+.doctor p {
+    font-size: 16px;
+    color: #555;
+    margin: 5px 0;
+}
+
+.degree {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 20px;
+    font-size: 20px;
+    color: #29082a;
+    margin-top: 10px;
+}
+
+.degree h3 {
+    font-weight: 600;
+}
+
+.doctor h4, .doctor p, .degree h3 {
+    margin: 5px 0;
+}
+
+.doctor h4.address {
+    font-size: 18px;
+    margin-top: 15px;
+}
+.doctor h4.fee{
+    font-size: 27px;
+    font-weight: 600;
+}
+.btn{
+    background-color: #e6d18c;
+    color: white;
+    font-size: 18px;
+    width: 200px;
+    margin-top: 20px;
+    text-align: center;
+}
+.date-blocks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.date-block {
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: center;
+    width: 100px;
+    transition: background-color 0.3s ease;
+}
+
+.date-block:hover {
+    background-color: #e0e0e0;
+}
+
+.date-block.selected {
+    background-color: #4caf50;
+    color: white;
+    border: 1px solid #388e3c;
+}
+
+.book-button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .doctor-details {
+        flex-direction: column; /* Stack elements vertically on smaller screens */
+        align-items: center; /* Center items */
+        text-align: center;
+    }
+
+    .doctor {
+        margin-left: 0;
+        margin-top: 20px; /* Add space between image and details */
+    }
+
+    .degree {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,96 @@
+.doctors{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.doctors h1{
+    font-size: 45px;
+    font-weight: 600;
+    color: rgb(54, 60, 60);
+}
+.doctors p{
+    font-size: 20px;
+    font-weight: 400;
+   
+    padding-top: 5px;
+}
+.topdoctors-list{
+    display:grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 equal columns */
+    gap: 20px; /* Space between the grid items */
+    width: 100%;
+    max-width: 1200px; /* Set a max width for better alignment */
+    margin: 0 auto; /* Center the grid */
+    padding: 20px;
+}
+.top-doctors-item {
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow effect */
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.top-doctors-item img {
+    background-color: #a1c5cd;
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0; /* Rounded corners for the top of the image */
+}
+
+.top-doctors-item:hover {
+    transform: translateY(-5px); /* Move up slightly on hover */
+}
+
+.top-doctors-item h3 {
+    font-size: 1.2em;
+    margin: 10px 0 5px;
+}
+
+.top-doctors-item h2 {
+    font-size: 1.1em;
+    color: #555; /* Grey text for speciality */
+}
+.availability {
+    display: flex;
+    align-items: center;
+    font-weight: 300;
+    font-size: 15px;
+    margin: 5px 0;
+}
+
+.dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.available {
+    color: green;
+}
+
+.available .dot {
+    background-color: green;
+}
+
+.not-available {
+    color: red;
+}
+
+.not-available .dot {
+    background-color: red;
+}
+.btn{
+    width:15%;
+    font-size: 20px;
+    font-weight: 400;
+    border-radius: 50px;
+    height:40px;
+    cursor: pointer;
+    background-color: #a1c5cd;
+}

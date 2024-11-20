@@ -1,0 +1,30 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 60px;
+
+}
+body{
+    background-color: white;
+}
+.link{
+    text-decoration: none;
+}
+.nav-middle{
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+    font-size: 20px;
+}
+.hr{
+    padding-top: none;
+    width: 92%;
+    height: 2px;
+    color: grey;
+}
+.nav-right img{
+    height: 60px;
+    width:60px;
+    border-radius: 50%;
+}
